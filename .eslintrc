@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [".storybook/**", "stories/**", "rollup.config.js"]
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}

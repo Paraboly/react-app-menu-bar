@@ -1,0 +1,80 @@
+{
+  "name": "package-name-here",
+  "main": "lib/ReactComponent.js",
+  "module": "lib/ReactComponent.es.js",
+  "scripts": {
+    "start": "npm-run-all build:rollup --parallel start:*",
+    "start:rollup": "rollup --config --sourcemap --watch",
+    "start:storybook": "start-storybook --port 3000",
+    "build": "run-s build:*",
+    "build:clean": "rm -rf lib",
+    "build:rollup": "rollup --config",
+    "build:storybook": "build-storybook --output-dir dist",
+    "format": "prettier --write",
+    "lint:js": "eslint --fix",
+    "lint:css": "stylelint --fix",
+    "lint:scss": "stylelint --fix --syntax scss"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@storybook/react": "^5.3.19",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-eslint-plugin": "^2.2.2",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.32",
+    "prettier": "^2.0.5",
+    "react": "^16.8.1",
+    "react-dom": "^16.13.1",
+    "rollup": "^2.17.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-postcss": "^3.1.2",
+    "stylelint": "^13.6.1"
+  },
+  "files": [
+    "lib/"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint:js",
+      "yarn format",
+      "git add"
+    ],
+    "*.css": [
+      "yarn lint:css",
+      "yarn format",
+      "git add"
+    ],
+    "*.scss": [
+      "yarn lint:scss",
+      "yarn format",
+      "git add"
+    ],
+    "*.{json,md,yml}": [
+      "yarn format",
+      "git add"
+    ]
+  }
+}
