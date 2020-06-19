@@ -12,6 +12,10 @@
         "devDependencies": [".storybook/**", "stories/**", "rollup.config.js"]
       }
     ],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-expressions": "off",
+    "import/no-named-as-default": 0,
+    "react/forbid-prop-types": 0,
+    "react/prop-types": 0
   }
 }

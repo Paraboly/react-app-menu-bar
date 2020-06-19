@@ -1,7 +1,7 @@
 {
-  "name": "package-name-here",
-  "main": "lib/ReactComponent.js",
-  "module": "lib/ReactComponent.es.js",
+  "name": "@paraboly/react-app-menu-bar",
+  "main": "lib/AppMenuBar.js",
+  "module": "lib/AppMenuBar.es.js",
   "scripts": {
     "start": "npm-run-all build:rollup --parallel start:*",
     "start:rollup": "rollup --config --sourcemap --watch",
@@ -46,7 +46,8 @@
     "rollup": "^2.17.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-postcss": "^3.1.2",
-    "stylelint": "^13.6.1"
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
   },
   "files": [
     "lib/"
