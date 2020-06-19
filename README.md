@@ -62,18 +62,18 @@ import React from "react";
 import ReactComponent from "../lib/ReactComponent.es";
 
 const ReactComponentContainer = () => (
-<div>
+  <div>
     <ReactComponent title="Bad Deadpool... Good Deadpool!" />
-</div>
+  </div>
 );
 storiesOf("ReactComponent", module).add("ReactComponent", () => (
-<ReactComponentContainer />
+  <ReactComponentContainer />
 ));
 ```
 
 ### How to create/build the my own component?
 
-Simply run the command and it will clean & rollup & preparing the storybook. Simply creating the lib and dist files. 
+Simply run the command and it will clean & rollup & preparing the storybook. Simply creating the lib and dist files.
 You will serve this lib file on npm or any register.
 
 ```sh
@@ -82,14 +82,10 @@ You will serve this lib file on npm or any register.
 
 ## What's Included
 
-* Rollup and Babel system for bundling the library in ES5 & ES6
-* Awesome testing example tool: **Storybook**
-* Prettier, ESLint and Stylelint for code formatting/linting
-* SASS support
-
-## Credits
-
-Heavily inspired by [samuelmueli's boilerplate](https://github.com/samuelmeuli/react-library-boilerplate)
+- Rollup and Babel system for bundling the library in ES5 & ES6
+- Awesome testing example tool: **Storybook**
+- Prettier, ESLint and Stylelint for code formatting/linting
+- SASS support
 
 ## Author
 
