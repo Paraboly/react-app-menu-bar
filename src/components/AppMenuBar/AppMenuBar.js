@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import "./AppMenuBar.scss";
 
 export default class AppMenuBar extends Component {
@@ -20,13 +19,3 @@ export default class AppMenuBar extends Component {
     );
   }
 }
-
-AppMenuBar.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.objectOf(PropTypes.object()),
-};
-
-AppMenuBar.defaultProps = {
-  title: "",
-  children: null,
-};

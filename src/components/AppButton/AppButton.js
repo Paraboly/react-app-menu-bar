@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./AppButton.scss";
 
 const AppButton = (props) => {
@@ -17,18 +16,6 @@ const AppButton = (props) => {
       </button>
     </div>
   );
-};
-
-AppButton.propTypes = {
-  text: PropTypes.string,
-  onPress: PropTypes.func,
-  imageSource: PropTypes.string,
-};
-
-AppButton.defaultProps = {
-  text: "Maps",
-  imageSource: null,
-  onPress: () => {},
 };
 
 export default AppButton;

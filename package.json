@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/react-app-menu-bar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/AppMenuBar.js",
   "module": "lib/AppMenuBar.es.js",
   "scripts": {
