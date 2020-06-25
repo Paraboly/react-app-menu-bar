@@ -24,12 +24,12 @@ const AppButton = (props) => {
         style={appButtonStyle || styles.appButtonStyle}
       >
         <div className="button-style">
-          <figure style={figureStyle}>
+          <div className="figure-style" style={figureStyle}>
             <img alt="" src={imageSource} />
             <figcaption className="subtitle-4" styles={textStyle}>
               {text}
             </figcaption>
-          </figure>
+          </div>
         </div>
       </button>
     </div>
