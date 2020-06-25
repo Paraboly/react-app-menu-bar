@@ -6,7 +6,14 @@ import "./AppButton.scss";
 import styles from "./AppButton.style";
 
 const AppButton = (props) => {
-  const { text, imageSource, appButtonStyle, textStyle, onPress } = props;
+  const {
+    text,
+    imageSource,
+    appButtonStyle,
+    figureStyle,
+    textStyle,
+    onPress,
+  } = props;
 
   return (
     <div id="app-button">
@@ -17,7 +24,7 @@ const AppButton = (props) => {
         style={appButtonStyle || styles.appButtonStyle}
       >
         <div className="button-style">
-          <figure>
+          <figure style={figureStyle}>
             <img alt="" src={imageSource} />
             <figcaption className="subtitle-4" styles={textStyle}>
               {text}
