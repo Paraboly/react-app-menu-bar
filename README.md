@@ -2,6 +2,8 @@
 
 [![Beautiful & Easy to use AppMenuBar for React by Paraboly](https://img.shields.io/badge/-Beautiful%20%26%20Easy%20to%20use%20AppMenuBar%20for%20React%20by%20Paraboly-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-app-menu-bar)
 
+[![npm version](https://img.shields.io/npm/v/@paraboly/react-app-menu-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/react-app-menu-bar)
+[![npm](https://img.shields.io/npm/dt/@paraboly/react-app-menu-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/react-app-menu-bar)
 ![Platform - Web](https://img.shields.io/badge/platform-web-blue.svg?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
